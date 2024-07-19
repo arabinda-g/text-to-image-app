@@ -1,0 +1,6 @@
+diffusers==0.29.2
+Flask==3.0.3
+Flask-Cors==4.0.1
+Flask-PyMongo==2.3.0
+torch==2.3.1
+transformers==4.42.4
