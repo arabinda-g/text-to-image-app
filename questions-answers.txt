@@ -1,0 +1,27 @@
+1) Video Processing and Temporal Analysis - Create a system that can analyze video content for inappropriate scenes or actions.
+
+1.a) How would you approach the problem of detecting inappropriate content that only becomes apparent in the context of a full video, rather than in individual frames?
+Ans: I would use a combination of temporal convolutional networks (TCN) and long short term memory (LSTM) networks to capture temporal dependencies and context. These models can find out sequences of frames to detect patterns that signify inappropriate content.
+
+
+1.b) Propose a method to generate alternative, appropriate video content to replace flagged sections while maintaining overall video coherence.
+Ans: I can use here generative adversarial networks (GAN) or video inpainting methods for this. These methods can synthesize new frames or sequences that blend with the surrounding content to create a natural video.
+
+
+1.c) Describe how you would optimize this system for real-time processing of live video streams.
+Ans: I would implement a pipeline that will do parallel processing. This setup would include real-time video segmentation, distributed processing across multiple nodes and the use of optimized, low-latency models for detecting and replaceing inappropriate content quickly.
+
+
+
+2) Multi-modal Content Analysis - Design a system that can analyze and moderate content that combines text, images, and video (e.g., a social media post with text, attached images, and an embedded video).
+
+2.a) How would you integrate the analysis of different content types to make a holistic moderation decision?
+Ans: I have to  use a multi-modal neural network architecture that processes text, images, and video streams in parallel. Features extracted from each modality would be fused in a joint embedding space, allowing the system to analyze the combined context and make holistic moderation decisions based on the integrated data.
+
+
+2.b) Propose a method to generate alternative, appropriate content for a post that has been flagged as inappropriate, preserving the original intent as much as possible.
+Ans: I will use natural language processing (NLP) techniques for text, image inpainting for images, and video synthesis methods for video. These tools would collaboratively create new content that maintains the original intent and context of the post while removing the inappropriate elements.
+
+
+2.c) Describe how you would handle potential conflicts between moderation decisions for different components of a multi-modal post.
+Ans: I will implement a hierarchical decision-making framework. This system would prioritize the most critical or impactful content type (like: video over text or images) and use an arbitration mechanism to resolve conflicts, ensuring a consistent and contextually appropriate moderation outcome.
